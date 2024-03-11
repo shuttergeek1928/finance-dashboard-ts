@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* 
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -14,9 +14,9 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,10 +24,28 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.finLanding-gradient-b-1 {
+  @apply bg-gradient-to-b from-[#ffeac8]/50 to-[#c3fff9]/50;
+}
+
+.finLanding-gradient-t-1 {
+  @apply bg-gradient-to-t from-[#ffeac8]/50 to-[#c3fff9]/50;
+}
+.content-gradient-r-1 {
+  @apply bg-gradient-to-r from-[#ffffd8]/50 to-[#cfefff]/50;
+}
+.content-gradient-l-1 {
+  @apply bg-gradient-to-l from-[#ffffd8]/50 to-[#cfefff]/50;
+}
+
+.testBorder {
+  @apply border-2 border-black rounded;
 }

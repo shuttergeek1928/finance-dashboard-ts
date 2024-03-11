@@ -14,6 +14,12 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
+    customGradients: {
+      landingPageGradient: {
+        "gradient-b-1": "bg-gradient-to-b from-[#ffeac8]/50 to-[#c3fff9]/50",
+        "gradient-t-1": "bg-gradient-to-t from-[#ffeac8]/50 to-[#c3fff9]/50",
+      },
+    },
   },
   plugins: [],
 };
