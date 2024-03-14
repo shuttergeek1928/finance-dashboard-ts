@@ -1,4 +1,6 @@
 import React from "react";
+import LineChartCustomElement from "./linechart";
+import StackedList from "./stackedlist";
 
 const CenterContent = () => {
   return (
@@ -38,12 +40,12 @@ const CenterContent = () => {
       
       {/* GRAPHS */}
       <div className="flex h-2/3 w-full p-2 drop-shadow-xl shadow-black  items-center justify-center rounded-lg bg-[#fbf5eb]">
-        <h1>Graphs</h1>
+        <LineChartCustomElement/>
       </div>
 
       {/* TRANSACTIONS HISTORY */}
-      <div className="flex h-2/3 w-full my-2 p-2 drop-shadow-xl shadow-black  items-center justify-center rounded-lg bg-[#fbf5eb]">
-        <h1>Recent Transactions</h1>
+      <div className="flex h-2/3 w-full my-2 p-2 drop-shadow-xl shadow-black  items-center justify-center rounded-lg bg-[#fbf5eb] overflow-clip overflow-y-scroll hideScrollBar">
+        <StackedList/>
       </div>
     </>
   );
