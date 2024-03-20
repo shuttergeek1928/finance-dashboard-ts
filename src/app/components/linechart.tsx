@@ -9,7 +9,7 @@ import {
   Line,
   LineChart,
   Brush,
-  ReferenceLine
+  ReferenceLine,
 } from "recharts";
 
 const data = [
@@ -60,19 +60,21 @@ const data = [
 const LineChartCustomElement = () => {
   return (
     <>
-      <LineChart
-        width={1000}
-        height={350}
-        data={data}
-        margin={{ top: 15, right: 10, left: 10, bottom: 0 }}
-      >
-        <XAxis dataKey="name" />
-        <YAxis />
-        <Tooltip />
-        <Line type="monotone" dataKey="pv" stroke="#8884d8" />
-        <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
-        <Line type="monotone" dataKey="mf" stroke="#FF204E" />
-      </LineChart>
+      <div className="h-auto">
+        <LineChart
+          width={1000}
+          height={250}
+          data={data}
+          margin={{ top: 15, right: 10, left: 10, bottom: 0 }}
+        >
+          <XAxis dataKey="name" />
+          <YAxis />
+          <Tooltip />
+          <Line type="monotone" dataKey="pv" stroke="#8884d8" />
+          <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+          <Line type="monotone" dataKey="mf" stroke="#FF204E" />
+        </LineChart>
+      </div>
     </>
   );
 };

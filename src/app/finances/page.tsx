@@ -8,7 +8,7 @@ const Finances = () => {
       {/* MAIN CONTAINER */}
       <div className="h-full w-full flex flex-row justify-between overflow-hidden">
         {/* NAVIGATION */}
-        <div className="2xl:flex flex-col flex-wrap hidden justify-between rounded-2xl drop-shadow-xl shadow-black m-5 p6 finLanding-gradient-t-1 box-border w-[12%]">
+        <div className="2xl:flex flex-col flex-wrap hidden justify-between rounded-2xl drop-shadow-xl shadow-black m-5 p-6 finLanding-gradient-t-1 box-border w-[12%]">
           <NavigationTab />
         </div>
         {/* CONTENT */}

@@ -1,7 +1,7 @@
 import React from "react";
 import LineChartCustomElement from "./linechart";
 import StackedList from "./stackedlist";
-
+import Highlight from "./highlight";
 const CenterContent = () => {
   return (
     <>
@@ -13,7 +13,7 @@ const CenterContent = () => {
       </div> */}
 
       {/* SEARCH BAR, NOTIFICATIONS & ALERTS */}
-      <div className="flex h-1/6 w-full rounded m-0 py-2 items-center justify-between gap-2">
+      <div className="flex h-[10%] w-full rounded m-0 py-2 items-center justify-between gap-2">
         <div className="flex h-full w-full drop-shadow-xl shadow-black  items-center justify-center rounded-lg bg-[#fbf5eb] p-2">
           Search Bar
         </div>
@@ -26,26 +26,26 @@ const CenterContent = () => {
       </div>
 
       {/* HIGHLIGHTS */}
-      <div className="flex h-1/3 w-full rounded py-2 items-center justify-between gap-2">
-        <div className="flex h-full w-1/3 drop-shadow-xl shadow-black  items-center justify-center rounded-lg bg-[#fbf5eb]">
-          HIGHLIGHTS 1
+      <div className="flex h-[20%] w-full rounded py-2 items-center justify-between gap-2">
+        <div className="flex flex-1 h-full w-1/3 drop-shadow-xl shadow-black items-center justify-center rounded-lg bg-[#fbf5eb]">
+          <Highlight size="60px" color="green.400"/>
         </div>
         <div className="flex h-full w-1/3 drop-shadow-xl shadow-black items-center justify-center rounded-lg bg-[#fbf5eb]">
-          HIGHLIGHTS 2
+          <Highlight size="60px" color="blue.400"/>
         </div>
         <div className="flex h-full w-1/3 drop-shadow-xl shadow-black items-center justify-center rounded-lg bg-[#fbf5eb]">
-          HIGHLIGHTS 3
+          <Highlight size="60px" color="red.400"/>
         </div>
       </div>
-      
+
       {/* GRAPHS */}
-      <div className="flex h-2/3 w-full p-2 drop-shadow-xl shadow-black  items-center justify-center rounded-lg bg-[#fbf5eb]">
-        <LineChartCustomElement/>
+      <div className="flex h-[40%] w-full p-2 drop-shadow-xl shadow-black items-center justify-center rounded-lg bg-[#fbf5eb]">
+        <LineChartCustomElement />
       </div>
 
       {/* TRANSACTIONS HISTORY */}
-      <div className="flex h-2/3 w-full my-2 p-2 drop-shadow-xl shadow-black  items-center justify-center rounded-lg bg-[#fbf5eb] overflow-clip overflow-y-scroll hideScrollBar">
-        <StackedList/>
+      <div className="flex h-[30%] w-full my-2 p-2 drop-shadow-xl shadow-black  items-center justify-center rounded-lg bg-[#fbf5eb] overflow-clip overflow-y-scroll hideScrollBar">
+        <StackedList />
       </div>
     </>
   );
