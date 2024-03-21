@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import NavBar from "./components/navbar";
+import { ChakraProvider } from "@chakra-ui/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +22,7 @@ export default function RootLayout({
         {/* FULL CONTAINER DIV */}
         <div className="flex flex-col h-screen finLanding-gradient-b-1">
           <NavBar />
-          {children}
+          <ChakraProvider>{children}</ChakraProvider>
         </div>
       </body>
     </html>

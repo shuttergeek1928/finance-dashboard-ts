@@ -37,7 +37,9 @@ const About = () => {
               height={100}
               className=" rounded-full shadow-xl"
             />
-            <h2 className="text-base font-semibold text-center">Marcy Walden</h2>
+            <h2 className="text-base font-semibold text-center">
+              Marcy Walden
+            </h2>
             <p className="text-xs text-gray-500 text-center"> Investor</p>
           </div>
           {/* ABOUT CONTAINER */}
@@ -49,31 +51,33 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col w-full items-center justify-between gap-4">
-          <div className="flex w-full justify-between items-center gap-6">
-            <p className="text-base font-semibold">Activities</p>
-            <Link href="/" className="text-xs">
-              View All
-            </Link>
-          </div>
-          <div className="flex flex-col w-full">
-            <div className="flex flex-col items-start justify-end gap-4">
-              {payments.map((payment) => (
-                <div className="flex gap-8 items-center justify-center">
-                  <Image
-                    src={payment.imgSrc}
-                    alt={payment.title}
-                    width={50}
-                    height={50}
-                  />
-                  <section>
-                    <h6 className="text-base">{payment.title}</h6>
-                    <p className="text-[8px] text-gray">
-                      {payment.date} : &#8377; {payment.amount}
-                    </p>
-                  </section>
-                </div>
-              ))}
+        <div className="flex flex-col h-full w-full items-center justify-evenly">
+          <div className="flex flex-col w-full items-center justify-between gap-4">
+            <div className="flex w-full justify-between items-center gap-6">
+              <p className="text-base font-semibold">Activities</p>
+              <Link href="/" className="text-xs">
+                View All
+              </Link>
+            </div>
+            <div className="flex flex-col w-full">
+              <div className="flex flex-col items-start justify-end gap-4">
+                {payments.map((payment) => (
+                  <div className="flex gap-8 items-center justify-center">
+                    <Image
+                      src={payment.imgSrc}
+                      alt={payment.title}
+                      width={30}
+                      height={30}
+                    />
+                    <section>
+                      <h6 className="text-base">{payment.title}</h6>
+                      <p className="text-[8px] text-gray">
+                        {payment.date} : &#8377; {payment.amount}
+                      </p>
+                    </section>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

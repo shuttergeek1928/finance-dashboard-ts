@@ -46,6 +46,6 @@
   @apply bg-gradient-to-l from-[#ffffd8]/50 to-[#cfefff]/50;
 }
 
-.testBorder {
-  @apply border-2 border-black rounded;
+.hideScrollBar {
+  scrollbar-width: none;
 }

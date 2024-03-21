@@ -21,8 +21,8 @@ const NavigationTab = () => {
     <>
       <div className="flex flex-col items-start gap-4">
         {navLinks.map((link) => (
-          <div className="flex gap-4 items-center justify-center">
-            <Image src={link.imgSrc} alt="dashboard" width={20} height={20} />
+          <div className="flex gap-4 items-center justify-start">
+            <Image src={link.imgSrc} alt="dashboard" width={20} height={20} className=""/>
             <Link href={link.url} className="text-lg">
               {link.title}
             </Link>
