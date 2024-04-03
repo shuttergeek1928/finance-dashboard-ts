@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 const links = [
+  { url: "/", title: "Home" },
   { url: "/finances", title: "Finances" },
   { url: "/about", title: "About" },
 ];
