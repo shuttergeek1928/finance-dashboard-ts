@@ -28,13 +28,13 @@ const CenterContent = () => {
       {/* HIGHLIGHTS */}
       <div className="flex h-[20%] w-full rounded py-2 items-center justify-between gap-2">
         <div className="flex flex-1 h-full w-1/3 drop-shadow-xl shadow-black items-center justify-center rounded-lg bg-[#fbf5eb]">
-          <Highlight size="60px" color="green.400"/>
+          <Highlight size="100px" color="green.400" progress={15}/>
         </div>
         <div className="flex h-full w-1/3 drop-shadow-xl shadow-black items-center justify-center rounded-lg bg-[#fbf5eb]">
-          <Highlight size="60px" color="blue.400"/>
+          <Highlight size="100px" color="blue.400" progress={55}/>
         </div>
         <div className="flex h-full w-1/3 drop-shadow-xl shadow-black items-center justify-center rounded-lg bg-[#fbf5eb]">
-          <Highlight size="60px" color="red.400"/>
+          <Highlight size="100px" color="red.400" progress={74}/>
         </div>
       </div>
 
@@ -44,7 +44,7 @@ const CenterContent = () => {
       </div>
 
       {/* TRANSACTIONS HISTORY */}
-      <div className="flex h-[30%] w-full my-2 p-2 drop-shadow-xl shadow-black  items-center justify-center rounded-lg bg-[#fbf5eb] overflow-clip overflow-y-scroll hideScrollBar">
+      <div className="flex h-[30%] w-full my-2 p-2 drop-shadow-xl shadow-black  items-center justify-center rounded-lg bg-[#fbf5eb] overflow-clip overflow-y-scroll scrollbar-thin scrollbar-thumb-teal-900 scrollbar-track-transparent">
         <StackedList />
       </div>
     </>
