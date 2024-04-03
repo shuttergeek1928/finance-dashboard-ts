@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning={true}>
       <body className={`${inter.className}`}>
         {/* FULL CONTAINER DIV */}
         <div className="flex flex-col h-screen finLanding-gradient-b-1">
