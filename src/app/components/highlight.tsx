@@ -15,7 +15,7 @@ const Highlight = ({
   return (
     <>
       <div className="flex max-h-full w-full items-center justify-between p-2 box-border">
-        <div className="flex flex-col items-start justify-start gap-1">
+        <div className="flex flex-col items-start justify-start gap-2">
           <section>
             <h3 className="font-semibold">Total Finance</h3>
             <h1>&#8377; 50,640</h1>
