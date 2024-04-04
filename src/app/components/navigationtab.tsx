@@ -13,31 +13,39 @@ const navLinks = [
 ];
 
 const links = [
-    { url: "/settings", title: "Settings", imgSrc: "/settings.svg" },
-    { url: "/logout", title: "Logout", imgSrc: "/logout.svg" },
-  ];
+  { url: "/settings", title: "Settings", imgSrc: "/settings.svg" },
+  { url: "/logout", title: "Logout", imgSrc: "/logout.svg" },
+];
 const NavigationTab = () => {
   return (
     <>
-      <div className="flex flex-col items-start gap-4">
-        {navLinks.map((link) => (
-          <div className="flex gap-4 items-center justify-start">
-            <Image src={link.imgSrc} alt="dashboard" width={20} height={20} className=""/>
-            <Link href={link.url} className="text-lg">
-              {link.title}
-            </Link>
-          </div>
-        ))}
-      </div>
-      <div className="flex flex-col items-start gap-4">
-        {links.map((link) => (
-          <div className="flex gap-4 items-center justify-center">
-            <Image src={link.imgSrc} alt="dashboard" width={18} height={18} />
-            <Link href={link.url} className="text-base">
-              {link.title}
-            </Link>
-          </div>
-        ))}
+      <div className="2xl:flex flex-col flex-wrap hidden justify-between rounded-2xl drop-shadow-xl shadow-black m-5 p-6 finLanding-gradient-t-1 box-border w-[12%]">
+        <div className="flex flex-col items-start gap-4">
+          {navLinks.map((link) => (
+            <div className="flex gap-4 items-center justify-start">
+              <Image
+                src={link.imgSrc}
+                alt="dashboard"
+                width={20}
+                height={20}
+                className=""
+              />
+              <Link href={link.url} className="text-lg">
+                {link.title}
+              </Link>
+            </div>
+          ))}
+        </div>
+        <div className="flex flex-col items-start gap-4">
+          {links.map((link) => (
+            <div className="flex gap-4 items-center justify-center">
+              <Image src={link.imgSrc} alt="dashboard" width={18} height={18} />
+              <Link href={link.url} className="text-base">
+                {link.title}
+              </Link>
+            </div>
+          ))}
+        </div>
       </div>
     </>
   );

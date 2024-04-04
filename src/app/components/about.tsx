@@ -59,10 +59,10 @@ const About = () => {
                 View All
               </Link>
             </div>
-            <div className="flex flex-col w-full">
-              <div className="flex flex-col items-start justify-end gap-4">
+            <div className="flex flex-col w-full h-full">
+              <div className="flex flex-col items-start justify-end gap-4 h-full">
                 {payments.map((payment) => (
-                  <div className="flex gap-8 items-center justify-center">
+                  <div className="flex gap-4 items-center justify-center">
                     <Image
                       src={payment.imgSrc}
                       alt={payment.title}
@@ -70,7 +70,7 @@ const About = () => {
                       height={30}
                     />
                     <section>
-                      <h6 className="text-base">{payment.title}</h6>
+                      <h6 className="text-sm">{payment.title}</h6>
                       <p className="text-[8px] text-gray">
                         {payment.date} : &#8377; {payment.amount}
                       </p>

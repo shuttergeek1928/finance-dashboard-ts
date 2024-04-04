@@ -6,11 +6,7 @@ const Finances = () => {
   return (
     <>
       {/* MAIN CONTAINER */}
-      <div className="h-full w-full flex flex-row justify-between overflow-hidden">
-        {/* NAVIGATION */}
-        <div className="2xl:flex flex-col flex-wrap hidden justify-between rounded-2xl drop-shadow-xl shadow-black m-5 p-6 finLanding-gradient-t-1 box-border w-[12%]">
-          <NavigationTab />
-        </div>
+      {/* <div className="w-full flex flex-row justify-between overflow-hidden"> */}
         {/* CONTENT */}
         <div className="flex flex-col rounded-2xl drop-shadow-xl shadow-black my-5 px-4 finLanding-gradient-t-1 items-center justify-between gap-[0.75rem] flex-1">
           <CenterContent />
@@ -24,7 +20,7 @@ const Finances = () => {
             PINNED INSIGHTS TAB
           </div>
         </div>
-      </div>
+      {/* </div> */}
     </>
   );
 };

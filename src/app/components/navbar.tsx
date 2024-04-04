@@ -10,7 +10,7 @@ const NavBar = () => {
   return (
     <>
       {/* CONTAINER */}
-      <div className="flex items-center h-14 justify-between px-4 sm:px-8 md:px-12 lg:px-28 xl:px-48 py-4 text-lg border-b-2">
+      <div className="flex items-center w-full justify-between px-4 sm:px-8 md:px-12 lg:px-28 xl:px-48 py-4 text-lg border-b-2 finLanding-gradient-b-1">
         {/* HYPERLINKS */}
         <div className="hidden md:flex gap-4 w-1/3 text-black">
           {links.map((link) => (
